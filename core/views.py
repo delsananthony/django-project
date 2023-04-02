@@ -25,7 +25,7 @@ class DjangoLogoutView(LogoutView):
 
 
 def home(request):
-    return render(request, 'core/home.html')
+    return render(request, 'core/index.html')
 
 
 class DashboardView(DjangoLedgerSecurityMixIn, ListView):
