@@ -1,0 +1,11 @@
+<form action="{% url 'login' %}" method="post" id="djl-el-login-form">
+  {% csrf_token %}
+  <div class="columns is-multiline">
+    <div class="column is-12">{{ form }}</div>
+    <div class="column is-12">
+      <button type="submit" class="button is-primary is-fullwidth">
+        Login
+      </button>
+    </div>
+  </div>
+</form>
